@@ -1,17 +1,17 @@
 window.onload = function(){
     let date = new Date();
-    let month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    let monthName = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     let month = date.getMonth();   
     let year = date.getFullYear(); 
-    let first_date = month_name[month] + " " + 1 + " " + year;
-    let tmp = new Date(first_date).toDateString();
-    let first_day = tmp.substring(0, 3);   
-    let day_name = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    let day_no = day_name.indexOf(first_day);   
+    let firstDate = monthName[month] + " " + 1 + " " + year;
+    let tmp = new Date(firstDate).toDateString();
+    let firstDay = tmp.substring(0, 3);   
+    let dayName = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    let dayNo = dayName.indexOf(firstDay);   
     let days = new Date(year, month+1, 0).getDate();    
-    let calendar = get_calendar(day_no, days);
-    document.getElementById("calendar-month-year").innerHTML = month_name[month]+" "+year;
-    document.getElementById("calendar-dates").appendChild(calendar);
+    let calendar = get_calendar(dayNo, days);
+    document.getElementById("monthYear").innerHTML = monthName[month]+ " " + year;
+    document.getElementById("calendarDates").appendChild(calendar);
 }
 
 get_calendar = (day_no, days) => {
