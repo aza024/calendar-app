@@ -28,4 +28,11 @@
   font-size: 2em;
 }
 
+.datesWrapper {
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-columns: 7, 1fr;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=main.css.map */
