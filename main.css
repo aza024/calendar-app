@@ -11,6 +11,14 @@
   margin: auto; 
   text-align: center;
 }
+
 td{
   padding: 1em;
+}
+
+#calendarHeader{
+  color: white; 
+  background: black;
+  padding: 1rem;
+  font-family: 'Playfair Display', serif;
 }
